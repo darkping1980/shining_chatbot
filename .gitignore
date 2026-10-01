@@ -9,5 +9,5 @@ wheels/
 # Virtual environments
 .venv
 
-# Environment variables / secrets
-.env
+# secrets
+.streamlit/secrets.toml

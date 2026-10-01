@@ -23,7 +23,9 @@ st.title("나의 첫번째 챗봇")
 
 @st.cache_resource
 def get_model():
-    return init_chat_model("openai:gpt-6-luna", reasoning_effort="none")
+    return init_chat_model("openai:gpt-6-luna", 
+                           reasoning_effort="none",
+                           api_key=st.secrets["OPENAI_API_KEY"])
 
 model = get_model()
 
