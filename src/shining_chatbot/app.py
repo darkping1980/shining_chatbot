@@ -19,7 +19,7 @@ st.set_page_config(
 # 계속 재사용하는 객체 -> resource 에 저장
 
 st.title("나의 첫번째 챗봇")
-st.write("test")
+
 
 @st.cache_resource
 def get_model():
